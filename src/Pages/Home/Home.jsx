@@ -1,8 +1,8 @@
-
-const Main = () => {
+const Home = () => {
   return (
-   <section>Home </section>
+    <section>
+    </section>
   );
 };
 
-export default Main;
+export { Home };

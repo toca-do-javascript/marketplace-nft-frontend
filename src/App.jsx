@@ -1,8 +1,8 @@
-import Main from "./Pages/Home/Home";
+import { Home } from "./pages/Home/Home"
 
 const App = () => {
   return (
-    <Main/>
+    <Home />
   );
 };
 
