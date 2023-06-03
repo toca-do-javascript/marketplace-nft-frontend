@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
     const ButtonAba = styled.button`
@@ -99,8 +99,6 @@ const Register = () => {
     const [area, setArea] = useState(true);
     const [values, setValues] = useState("");
     const [valuesLogin, setValuesLogin] = useState("");
-
-
 
     const handleChangeValues = (value) => {
         setValues((prevValue) => ({
