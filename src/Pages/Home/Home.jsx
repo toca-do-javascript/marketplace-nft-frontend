@@ -1,8 +1,10 @@
-
 const Main = () => {
+  
   return (
-   <section>Home </section>
-  );
-};
+    <div>
+      <h1>Home</h1>
+    </div>
+  )
+}
 
-export default Main;
+export default Main
