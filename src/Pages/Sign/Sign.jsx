@@ -1,17 +1,19 @@
 import {  useState } from "react";
 import styled from "styled-components";
 
+   
+
     const ButtonAba = styled.button`
         font-size: 20px;
         color: white;
         background: none;
         border: none;
         padding-bottom: 20px;
-        border-bottom: solid 3px #2f0031;
+        border-bottom: solid 3px #360636;
         width: 50%;
         font-family: sans-serif;
             &:hover {
-            border-bottom: solid 3px #99008c;
+            border-bottom: solid 3px  #ab1aad;
             }
     `;
      
@@ -28,6 +30,10 @@ import styled from "styled-components";
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         font-weight: 500;
+        @media only screen and (max-width:700px) {
+            padding-top: 50px;
+        };
+        
     `
 
     const Coments = styled.div`
@@ -39,21 +45,37 @@ import styled from "styled-components";
         font-weight: 400;
         margin-top: 30px;
         font-family: sans-serif;
+        @media only screen and (max-width:1000px) {
+            display: none;
+            
+
+            
+        };
     `    
 
     const MenuLateral = styled.div`
         width: 50%;
         position: fixed;
         right: 0px;
-        background: rgb(20, 2, 34);
+        background: #181022;
         height: 100vh;
-    `
+        @media only screen and (max-width:1000px) {
+            width: 100%;
+            bottom: 0px;
+            height: 70vh;
+        };
+    `;
 
     const FullScream = styled.div`
         background-image: url("https://th.bing.com/th/id/R.7371bd63196d1f1e7df252abe2eb4b60?rik=zWGiwU2WB4M5Ow&pid=ImgRaw&r=0");
         background-size: cover;
         height: 100vh;
-        width: 50%; 
+        width: 50%;
+        @media only screen and (max-width:1000px) {
+            width: 100%;
+            background-size: cover;
+            height: 30vh;
+        };
     `
 
     const Login = styled.div`
@@ -65,23 +87,23 @@ import styled from "styled-components";
         width: 50%;
         margin: auto;   
         padding: 15px;
-        background: rgb(20, 2, 34);
+        background: #181022;
         margin-bottom: 20px;
         text-align: center;
         font-weight: 700;
-        color: #c900c9;
+        color:  #ab1aad;
         border-radius: 50px; 
-        border: solid 1px #c900c9 ;
+        border: solid 1px  #ab1aad;
         &:hover{
-            border: solid 1px #c900c9 ;
+            border: solid 1px  #ab1aad ;
         }
         ::placeholder {
-        color:  #c900c9 ;
+        color:   #ab1aad
         }
     `
     
     const Button = styled.div`
-        background: #c900c9;
+        background:  #ab1aad;
         width: 50%;
         color: white;
         font-size: 14px;
