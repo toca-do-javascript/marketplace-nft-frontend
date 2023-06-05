@@ -1,8 +1,9 @@
-
 const Main = () => {
-  return (
-   <section>Home </section>
-  );
-};
+  
+  return (<>
+    Oi
+  
+  </>)
+}
 
-export default Main;
+export default Main
