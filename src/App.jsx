@@ -1,4 +1,3 @@
-
 import Register from "./Pages/Sign/Sign";
 import Header from "./Ui/Components/Header";
 
@@ -12,7 +11,6 @@ const App = () => {
             <Route path='/' element={<Register/>} />
           </Routes>
         </Router>
-
   );
 };
 
