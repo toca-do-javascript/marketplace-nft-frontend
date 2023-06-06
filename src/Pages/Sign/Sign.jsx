@@ -78,27 +78,6 @@ import { Input } from "../../Ui/Components/Input/Input";
     const Login = styled.div`
         margin-top: 60px;
     `
-
-    const TextField = styled.input`
-        display: block;
-        width: 50%;
-        margin: auto;   
-        padding: 15px;
-        background: #181022;
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 700;
-        color:  #ab1aad;
-        border-radius: 50px; 
-        border: solid 1px  #ab1aad;
-        &:hover{
-            border: solid 1px  #ab1aad ;
-        }
-        ::placeholder {
-        color:   #ab1aad
-        }
-    `
-    
     const Button = styled.div`
         background:  #ab1aad;
         width: 50%;
