@@ -1,5 +1,5 @@
 
-import Register from "./Pages/Sign/Sign";
+import Register from "./Pages/Register/Index";
 import Header from "./Ui/Components/Header";
 
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
