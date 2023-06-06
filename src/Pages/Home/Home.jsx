@@ -1,8 +1,9 @@
 const Home = () => {
-  return (
-    <section>
-    </section>
-  );
-};
+  
+  return (<>
+    Oi
+  
+  </>)
+}
 
 export { Home };
