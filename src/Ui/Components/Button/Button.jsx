@@ -1,16 +1,25 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import "../../../variable.css";
 
 // eslint-disable-next-line react/prop-types
-const Button = ({transparent , selected, rounded, children }) => {
-  return(
-    <ButtonWrapper transparent={transparent} selected={selected} rounded={rounded}> { children }</ButtonWrapper>
+const Button = ({ transparent, selected, rounded, children }) => {
+  return (
+    <ButtonWrapper
+      transparent={transparent}
+      selected={selected}
+      rounded={rounded}
+    >
+      {" "}
+      {children}
+    </ButtonWrapper>
   );
 };
 
 const ButtonWrapper = styled.button`
-  background-color: ${(props) => props.transparent ? "transparent" : "var(--btnColor)"};
-  border: 1px solid ${(props) => props.transparent ? "var(--btnColor)" : "transparent"};
+  background-color: ${(props) =>
+    props.transparent ? "transparent" : "var(--btnColor)"};
+  border: 1px solid
+    ${(props) => (props.transparent ? "var(--btnColor)" : "transparent")};
   border-radius: ${(props) => (props.rounded ? "60px" : "9px")};
   width: 30%;
   display: flex;
@@ -26,13 +35,11 @@ const ButtonWrapper = styled.button`
   letter-spacing: 0.2em;
   cursor: pointer;
   transition: 0.3s ease;
-
   ${(props) =>
     props.selected &&
     css`
       background-color: var(--btnColor);
     `}
-
   &:hover {
     transform: scale(1.05);
   }
