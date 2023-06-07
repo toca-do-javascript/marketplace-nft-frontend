@@ -9,14 +9,14 @@ const Button = ({transparent , selected, rounded, children }) => {
 };
 
 const ButtonWrapper = styled.button`
-  background-color: ${(props) => props.transparent ? "transparent" : "var(--btnColor)"};
-  border: 1px solid ${(props) => props.transparent ? "var(--btnColor)" : "transparent"};
+  background-color: ${(props) => props.transparent ? "transparent" : "var(--btnFilled)"};
+  border: 1px solid ${(props) => props.transparent ? "var(--btnFilled)" : "transparent"};
   border-radius: ${(props) => (props.rounded ? "60px" : "9px")};
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${(props) => (props.transparent ? "var(--btnColor)" : "white")};
+  color: ${(props) => (props.transparent ? "var(--btnFilled)" : "white")};
   padding: 15px;
   font-size: 12px;
   margin: auto;
@@ -30,7 +30,7 @@ const ButtonWrapper = styled.button`
   ${(props) =>
     props.selected &&
     css`
-      background-color: var(--btnColor);
+      background-color: var(--btnFilled);
     `}
 
   &:hover {
