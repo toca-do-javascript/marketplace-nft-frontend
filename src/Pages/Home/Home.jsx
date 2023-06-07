@@ -173,7 +173,7 @@ const Main = () => {
       <TAGHEADER>CONPONENTE DO HEARDER</TAGHEADER>
       <HeaderPagina>
         <Headerbox1>
-          <TextTitle>DISCOVER, AND COLLECT<br/> DIGITAL ART NFTs</TextTitle>
+          <TextTitle>DISCOVER, AND COLLECT<br/> DIGITAL ART NFT</TextTitle>
           <TextDecoder>Digital marketplace for crypto collectibles and non-fungible<br/> tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</TextDecoder>
           <ButtonColletion>Explore Collection</ButtonColletion>
           <CardBoxDado>
