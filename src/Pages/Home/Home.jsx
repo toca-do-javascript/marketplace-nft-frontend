@@ -1,4 +1,4 @@
-const Main = () => {
+const Home = () => {
   
   return (<>
     Oi
@@ -6,4 +6,4 @@ const Main = () => {
   </>)
 }
 
-export default Main
+export { Home };

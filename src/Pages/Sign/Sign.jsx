@@ -1,7 +1,6 @@
 import {  useState } from "react";
 import styled from "styled-components";
 
-
     const Title = styled.div`
         padding-top: 150px;
         text-align: center;
@@ -14,7 +13,7 @@ import styled from "styled-components";
         };
         
     `
-
+    
     const MenuLateral = styled.div`
         width: 50%;
         position: fixed;
@@ -49,23 +48,10 @@ import styled from "styled-components";
     const Login = styled.div`
         margin-top: 60px;
     `
-
-    const TextField = styled.input`
-        display: block;
-        width: 40%;
-        margin: auto;   
-        background: #d9d9d9;
-        padding: 15px;
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 700;
-        border: none;
-        border-radius: 10px;
-    `
     
-    const ButtonLogin = styled.div`
-        background: #522087;
-        width: 30%;
+    const Button = styled.div`
+        background:  #ab1aad;
+        width: 50%;
         color: white;
         font-size: 12px;
         padding: 15px;
@@ -198,27 +184,45 @@ const Register = () => {
                 <Title>SIGN IN</Title>
                 <Login>                                
                         <form>
-                            <TextInput>E-mail:</TextInput>
-                            <TextField
                                 type="text"
                                 name="loginemail"
                                 onChange={handleChangeValues}
                             />
-                            <TextInput>Senha</TextInput>
-                            <TextField
-                                type="text"
+
+                            <Input
+                                type="password"
+                                placeholder="Enter you Password"
                                 name="loginpassword"
                                 onChange={handleChangeValues}
                             />
-                            <ButtonLogin onClick={handleClickButton}>EXPLORE</ButtonLogin>
-                        </form>                                
-                </Login>
-                <ContaNova>
-                    Não tenho conta
-                    <br/>
-                    <Span>Clique aqui</Span>    
-                </ContaNova> 
-                <CopyRigth>Copyrigth  2022 NFTART.All rigths reserved.</CopyRigth>                  
+                            <Button onClick={handleClickButton}>Login Acount</Button>
+                        </form>
+                        
+                    </Login>
+                    :
+                    <Login>
+                        <form>
+                            <Input
+                                type="text"
+                                placeholder="Enter your E-mail"
+                                name="Remail"
+                                onChange={handleChangeValuesLogin}
+                            />
+                            <Input
+                                type="password"
+                                placeholder="Enter your Password"
+                                name="Rpassword"
+                                onChange={handleChangeValuesLogin}
+                            />
+                            <Input
+                                type="password"
+                                placeholder="Repeat your Password"
+                                name="Cpasswor"
+                                onChange={handleChangeValuesLogin}
+                            />
+                            <Button onClick={handleClickButtonLogin}>Create Acount</Button>
+                        </form>    
+                    </Login>}
             </MenuLateral>
        </FullScream>
       
