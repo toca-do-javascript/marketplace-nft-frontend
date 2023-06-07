@@ -1,6 +1,6 @@
 import {  useState } from "react";
 import styled from "styled-components";
-
+import { Input } from "../../Ui/Components/Input/Input";
    
 
     const ButtonAba = styled.button`
@@ -47,9 +47,6 @@ import styled from "styled-components";
         font-family: sans-serif;
         @media only screen and (max-width:1000px) {
             display: none;
-            
-
-            
         };
     `    
 
@@ -160,14 +157,14 @@ const Register = () => {
                     <Login>
                         
                         <form>
-                            <TextField
+                            <Input
                                 type="text"
                                 placeholder="Enter you login"
                                 name="loginemail"
                                 onChange={handleChangeValues}
                             />
-                            <TextField
-                                type="text"
+                            <Input
+                                type="password"
                                 placeholder="Enter you Password"
                                 name="loginpassword"
                                 onChange={handleChangeValues}
@@ -179,21 +176,21 @@ const Register = () => {
                     :
                     <Login>
                         <form>
-                            <TextField
+                            <Input
                                 type="text"
-                                placeholder="Enter tou E-mail"
+                                placeholder="Enter your E-mail"
                                 name="Remail"
                                 onChange={handleChangeValuesLogin}
                             />
-                            <TextField
-                                type="text"
-                                placeholder="Enter you Password"
+                            <Input
+                                type="password"
+                                placeholder="Enter your Password"
                                 name="Rpassword"
                                 onChange={handleChangeValuesLogin}
                             />
-                            <TextField
-                                type="text"
-                                placeholder="Repeat you Password"
+                            <Input
+                                type="password"
+                                placeholder="Repeat your Password"
                                 name="Cpasswor"
                                 onChange={handleChangeValuesLogin}
                             />
