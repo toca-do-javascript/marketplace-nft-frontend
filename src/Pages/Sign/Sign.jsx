@@ -110,8 +110,7 @@ import styled from "styled-components";
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-
-letter-spacing: 0.065em;
+        letter-spacing: 0.065em;
     `
 
     const MenuTitle = styled.div`
@@ -167,15 +166,9 @@ const Register = () => {
         }));
     };
 
-    
-    
     const handleClickButton = () =>{
         console.log(values)
     };
-
-    
-
-    
 
     return (<>
         
@@ -223,6 +216,6 @@ const Register = () => {
        </FullScream>
       
       </>)
-  }
+}
   
-  export default Register
+export default Register

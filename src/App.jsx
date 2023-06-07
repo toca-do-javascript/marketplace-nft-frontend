@@ -1,4 +1,5 @@
 
+import Main from "./Pages/Home/Home";
 import Register from "./Pages/Sign/Sign";
 import Header from "./Ui/Components/Header";
 
@@ -9,7 +10,8 @@ const App = () => {
     <Router>
           <Routes>
             <Route path='/header' element={<Header/>} />
-            <Route path='/' element={<Register/>} />
+            <Route path='/register' element={<Register/>} />
+            <Route path='/' element={<Main/>} />
           </Routes>
         </Router>
 
