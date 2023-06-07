@@ -1,7 +1,7 @@
 import {  useState } from "react";
 import styled from "styled-components";
-import { Button } from "../../Ui/Components/Button/Button.jsx"
-
+import { Button } from "../../Ui/Components/Button/Button"
+import { Input } from "../../Ui/Components/Input/Input"
 
     const Title = styled.div`
         padding-top: 150px;
@@ -15,7 +15,7 @@ import { Button } from "../../Ui/Components/Button/Button.jsx"
         };
         
     `
-
+    
     const MenuLateral = styled.div`
         width: 50%;
         position: fixed;
@@ -47,36 +47,21 @@ import { Button } from "../../Ui/Components/Button/Button.jsx"
         };
     `
 
-    const Login = styled.div`
-        margin-top: 60px;
-
-        Button{
-            margin-top: 40px;
-            font-size: 20px;
-            line-height: 30px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        @media (max-width:980px) {
-            Button {
-                font-size: 16px;
-                padding: 10px;
-            }
-        }
-    `
-
-    const TextField = styled.input`
-        display: block;
-        width: 40%;
-        margin: auto;   
-        background: #d9d9d9;
-        padding: 15px;
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 700;
-        border: none;
-        border-radius: 10px;
-    `
+const Login = styled.div`
+margin-top: 60px;
+Button{
+    margin-top: 00px;
+    font-size: 20px;
+    line-height: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width:980px) {
+    Button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+`
 
     const Span = styled.div`
         font-weight: 600;
@@ -197,27 +182,46 @@ const Register = () => {
                 <Title>SIGN IN</Title>
                 <Login>                                
                         <form>
-                            <TextInput>E-mail:</TextInput>
-                            <TextField
+                            <Input
                                 type="text"
                                 name="loginemail"
                                 onChange={handleChangeValues}
                             />
-                            <TextInput>Senha</TextInput>
-                            <TextField
-                                type="text"
+
+                            <Input
+                                type="password"
+                                placeholder="Enter you Password"
                                 name="loginpassword"
                                 onChange={handleChangeValues}
                             />
-                            <Button onClick={handleClickButton}> Explore </Button>
-                        </form>                                
-                </Login>
-                <ContaNova>
-                    Não tenho conta
-                    <br/>
-                    <Span>Clique aqui</Span>    
-                </ContaNova> 
-                <CopyRigth>Copyrigth  2022 NFTART.All rigths reserved.</CopyRigth>                  
+                            <Button onClick={handleClickButton}>Login Acount</Button>
+                        </form>
+                        
+                    </Login>
+                    :
+                    <Login>
+                        <form>
+                            <Input
+                                type="text"
+                                placeholder="Enter your E-mail"
+                                name="Remail"
+                                onChange={handleChangeValues}
+                            />
+                            <Input
+                                type="password"
+                                placeholder="Enter your Password"
+                                name="Rpassword"
+                                onChange={handleChangeValues}
+                            />
+                            <Input
+                                type="password"
+                                placeholder="Repeat your Password"
+                                name="Cpasswor"
+                                onChange={handleChangeValues}
+                            />
+                            <Button onClick={handleClickButton}>Create Acount</Button>
+                        </form>    
+                    </Login>
             </MenuLateral>
        </FullScream>
       
