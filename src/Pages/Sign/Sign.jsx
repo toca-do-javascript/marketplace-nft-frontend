@@ -186,7 +186,7 @@ const Register = () => {
           <Login>
             <form>
               <Input
-                type="text"
+                type="email"
                 display="E-mail"
                 name="loginemail"
                 onChanged={handleChangeValues}
