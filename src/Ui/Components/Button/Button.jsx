@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "../../../variable.css";
+import "../../../../variable.css";
 
 // eslint-disable-next-line react/prop-types
 const Button = ({ backgroundColor, borderColor, children }) => {

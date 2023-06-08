@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { useState } from "react";
 import styled from "styled-components";
@@ -31,7 +32,6 @@ const InputWrapper = styled.div`
     color:  #ab1aad;
     border-radius: 50px; 
     border: solid 1px  #ab1aad;
-    
     &:hover{
         border: solid 1px  #ab1aad ;
     }
