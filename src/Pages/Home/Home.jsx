@@ -1,9 +1,5 @@
 const Home = () => {
-  
-  return (<>
-    Oi
-  
-  </>)
-}
+  return <>Oi</>;
+};
 
 export { Home };
