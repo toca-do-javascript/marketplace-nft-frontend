@@ -3,17 +3,18 @@ import { SiEthereum } from "react-icons/si";
 
 const TAGHEADER = styled.div`
   height: 10vh;
-`
+`;
 
 const HeaderPagina = styled.div`
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(198,42,234,1) 100%);  height: 90vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(198,42,234,1) 100%);  height: 90vh;
   display: flex;
+`;
 
-`
 const Headerbox1 = styled.div`
   width: 60%;
-`
+`;
+
 const TextTitle = styled.div`
   font-family: 'Poppins';
   font-style: normal;
@@ -24,7 +25,8 @@ const TextTitle = styled.div`
   color: #FFFFFF;
   padding-top: 180px;
   padding-left: 100px;
-`
+`;
+
 const TextDecoder = styled.div`
   padding-left: 100px;
   font-family: 'DM Sans', sans-serif;
@@ -32,7 +34,8 @@ const TextDecoder = styled.div`
   font-size: 17px;
   line-height: 160%;
   color: #FFFFFF;       
-`
+`;
+
 const ButtonColletion = styled.div`
   background: #531885;
   padding: 10px;
@@ -44,41 +47,46 @@ const ButtonColletion = styled.div`
   font-family: 'Poppins';
   margin-top: 30px;
   font-weight: 700;
+`;
 
-`
 const Flex = styled.div`
   display: flex;
-`
+`;
+
 const CardBoxDado = styled.div`
   width: 50%;
   margin-left: 100px;
   margin-top: 40px;
-`
-const Box = styled.div`
-  
-`
+`;
+
+const Box = styled.div` 
+`;
+
 const NunberValor = styled.div`
   font-family: 'Poppins';
   color: #531885;
   font-size: 40px;
   font-weight: 800;
+`;
 
-`
 const NameArt = styled.div`
   color: white;
   font-size: 20px;
-`
+`;
+
 const Headerbox2 = styled.div`
   width: 40%;
-`
+`;
+
 const BoxImg1 = styled.div`
-    height: 400px;
-    margin-top: 150px;
-    width: 400px;
-    background-image: url("https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/03154647/CatVader.png");
-    background-size: cover;
-    border-radius: 20px;
-`
+  height: 400px;
+  margin-top: 150px;
+  width: 400px;
+  background-size: cover;
+  border-radius: 20px;
+  background-image: url("https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/03154647/CatVader.png");
+`;
+
 const CardNftName = styled.div`
   color: white;
   font-family: 'DM Sans';
@@ -87,8 +95,8 @@ const CardNftName = styled.div`
   margin-top: 20px;
   margin-left: 20px;
   font-size: 30px;
-    
-`
+`;
+
 const CardImgArtista = styled.div`
   background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600");
   border-radius: 100%;
@@ -96,16 +104,17 @@ const CardImgArtista = styled.div`
   margin-left: 20px;
   height: 50px;
   width: 70px;
-`
+`;
+
 const CardNomeArtista = styled.div`
   color: white;
   width: 100%;
   padding-top: 15px;
   padding-left: 10px;
   font-size:20px ;
-  font-weight:800 ;
-  
-`
+  font-weight:800 ;  
+`;
+
 const CardBoxDados = styled.div`
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
@@ -114,14 +123,15 @@ const CardBoxDados = styled.div`
   margin: 10px;
   height: 70px;
   margin-top: 180px;
-`
+`;
+
 const CardText = styled.div`
   color: white;
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 500;
-        
-`
+  font-weight: 500;       
+`;
+
 const CardPrice = styled.div`
   color: white;
   padding-top: 15px;
@@ -129,7 +139,8 @@ const CardPrice = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-`
+`;
+
 const CardDate = styled.div`
   color: white;
   padding-top: 15px;
@@ -137,7 +148,8 @@ const CardDate = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-`
+`;
+
 const Boximg2 = styled.div`
   background-image: url("https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/05/21101412/piramide-scaled.jpg");
   background-size: cover;
@@ -145,7 +157,8 @@ const Boximg2 = styled.div`
   margin-top: 170px;
   border-radius: 0px 20px 20px 0px;
   width: 35px;
-`
+`;
+
 const Boximg3 = styled.div`
   background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
@@ -153,7 +166,8 @@ const Boximg3 = styled.div`
   margin-top: 190px;
   border-radius: 0px 20px 20px 0px;
   width: 35px;
-`
+`;
+
 const SeloEtheriun = styled.div`
   background: #C62AEA;
   height: 100px;
@@ -163,9 +177,7 @@ const SeloEtheriun = styled.div`
   left: -60px;
   border-radius: 100%;
   color: white;
-
-
-`
+`;
 
 const Main = () => {
   
@@ -174,7 +186,8 @@ const Main = () => {
       <HeaderPagina>
         <Headerbox1>
           <TextTitle>DISCOVER, AND COLLECT<br/> DIGITAL ART NFT</TextTitle>
-          <TextDecoder>Digital marketplace for crypto collectibles and non-fungible<br/> tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</TextDecoder>
+          <TextDecoder>Digital marketplace for crypto collectibles and non-fungible
+            <br/> tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</TextDecoder>
           <ButtonColletion>Explore Collection</ButtonColletion>
           <CardBoxDado>
           <Flex style={{justifyContent:"space-between"}}>
@@ -225,4 +238,4 @@ const Main = () => {
   </>)
 }
 
-export default Main
+export default Main;

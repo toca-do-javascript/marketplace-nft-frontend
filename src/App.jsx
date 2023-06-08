@@ -8,12 +8,12 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 const App = () => {
   return (
     <Router>
-          <Routes>
-            <Route path='/header' element={<Header/>} />
-            <Route path='/register' element={<Register/>} />
-            <Route path='/' element={<Main/>} />
-          </Routes>
-        </Router>
+      <Routes>
+        <Route path='/header' element={<Header/>} />
+          <Route path='/register' element={<Register/>} />
+          <Route path='/' element={<Main/>} />
+      </Routes>
+    </Router>
 
   );
 };
