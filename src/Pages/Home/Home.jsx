@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { SiEthereum } from "react-icons/si";
+import imgSelo from "../../Ui/Img/selo.png"
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -169,14 +170,10 @@ const Boximg3 = styled.div`
 `;
 
 const SeloEtheriun = styled.div`
-  background: #C62AEA;
+  background-image: url(${imgSelo});
   height: 100px;
   width: 100px;
-  position: absolute;
-  top: -100px;
-  left: -60px;
-  border-radius: 100%;
-  color: white;
+  
 `;
 
 const Main = () => {
@@ -225,7 +222,8 @@ const Main = () => {
                     <CardPrice>0.25 ETH</CardPrice>
                     <CardDate style={{paddingLeft:"70px"}}>12h  43m  42s</CardDate>
                   </Flex>
-                  <SeloEtheriun><SiEthereum style={{color:"black",width:"35px", height:"35px",position:"absolute",left:"32%",top:"33%",transform:"rotate(30deg)",}}/></SeloEtheriun>
+                  <SeloEtheriun>
+                  </SeloEtheriun>
                 </CardBoxDados>
               </BoxImg1>
               <Boximg2>
