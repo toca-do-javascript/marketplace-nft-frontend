@@ -1,6 +1,14 @@
 import styled from "styled-components"
 import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/selo.png"
+import imgSelo from "../../Ui/Img/selo.png";
+import iconFast from "../../Ui/Img/icons/card-tick.png";
+import iconSafe from "../../Ui/Img/icons/chart-square.png";
+import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
+import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
+import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
+import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
+import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
+
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -171,15 +179,196 @@ const Boximg3 = styled.div`
 
 const SeloEtheriun = styled.div`
   background-image: url(${imgSelo});
-  height: 100px;
-  width: 100px;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: -120px;
+  left: -70px;
+`;
+
+const ContainerTransaction = styled.div`
+  height: 25vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(198,42,234,1) 95%, rgba(198,42,234,1) 100%);
+`;
+
+const ItemStart = styled.div`
+  width: 40%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: start;
+  padding-left: 10%;
+  color: #fff;
+  margin-top: -13px;
+
+`;
+
+const ItemMid = styled.div`
+  width: 30%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  text-align: start;
+  color: #fff;
+  margin-top: -28px;
+`;
+
+const IconFast = styled.div`
+  background-image: url(${iconFast});
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  margin-top: 25px;
+  margin-right: 17px;
   
 `;
+
+const IconSafe = styled.div`
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  margin-top: 25px;
+  margin-right: 17px;
+  background-image: url(${iconSafe}); 
+`;
+
+
+const ItemEnd = styled.div`
+  width: 30%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  text-align: start;
+  color: #fff;
+  margin-top: -27px;
+`;
+
+const ComponenteCardHover = styled.div`
+  background-color: #000000;
+  height: auto;
+`;
+
+const TitleCard = styled.div`
+  color: #fff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 90px;
+`;
+
+const ParagrafoCard = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 90px;
+`;
+
+const CardHoverUm = styled.div`
+  background-image: url(${cardHoverUm});
+  background-size: cover;
+  width: 230px;
+  height: 320px;
+  margin-top: 55px;
+  margin-right: -60px;
+  border-radius: 20px;
+
+  &:hover{
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+  }
+  
+`;
+
+const CardHoverDois = styled.div`
+  background-image: url(${cardHoverDois});
+  background-size: cover;
+  width: 270px;
+  height: 380px;
+  margin-top: 25px;
+  margin-right: -30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    
+
+  &:hover{
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+  }
+`;
+
+const CardHoverTres = styled.div`
+  background-image: url(${cardHoverTres});
+  background-size: cover;
+  width: 320px;
+  height: 430px;
+  z-index: 2;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+  
+  &:hover{
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+  }
+`;
+const CardHoverQuatro = styled.div`
+  background-image: url(${cardHoverQuatro});
+  background-size: cover;
+  width: 270px;
+  height: 380px;
+  margin-top: 25px;
+  margin-left: -30px;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+  &:hover{
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+  }
+`;
+
+
+const CardHoverCinco = styled.div`
+   background-image: url(${cardHoverCinco});
+   background-size: cover;
+   width: 230px;
+   height: 320px;
+   margin-top: 55px;
+   margin-left: -60px;
+   border-radius: 20px;
+
+   
+  &:hover{
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+  }
+`;
+
+const ContainerCenter = styled.div`
+ display: flex;
+ justify-content: center;
+`
 
 const Main = () => {
   
   return (<>
       <TAGHEADER>CONPONENTE DO HEARDER</TAGHEADER>
+      {/* Componente da página principal */}
       <HeaderPagina>
         <Headerbox1>
           <TextTitle>DISCOVER, AND COLLECT<br/> DIGITAL ART NFT</TextTitle>
@@ -233,6 +422,49 @@ const Main = () => {
             </Flex>
         </Headerbox2>
       </HeaderPagina>
+      {/* Componente do card */}
+      <ContainerTransaction>
+        <Flex>
+          <ItemStart>The amazing NFT art <br/> of the world here</ItemStart>
+          <ItemMid>
+            <Flex>
+              <IconFast></IconFast>
+              <div>
+                <h3>Fast Transaction</h3>
+                <p style={{fontSize:"18px", fontFamily:"DM Sans"}}>Create collections and sell <br/> your works of art quickly.</p>
+              </div>
+            </Flex>
+          </ItemMid>
+          <ItemEnd>
+          <Flex>
+              <IconSafe></IconSafe>
+              <div>
+                <h3>Safe Transaction </h3>
+                <p style={{fontSize:"18px", fontFamily:"DM Sans"}}>Make secure transactions <br/> through our system.</p>
+              </div>
+            </Flex>
+          </ItemEnd>
+          
+        </Flex>
+      </ContainerTransaction>
+      {/* Card hover */}
+      <ComponenteCardHover>
+        <TitleCard>
+          <h3>Discover a world of collections</h3>
+        </TitleCard>
+        <ParagrafoCard>
+          <p>and trade in just one place!</p>
+        </ParagrafoCard>
+        <ContainerCenter>
+        <Flex style={{width:'auto', margin:'auto'}}>
+          <CardHoverUm></CardHoverUm>
+          <CardHoverDois></CardHoverDois>
+          <CardHoverTres></CardHoverTres>
+          <CardHoverQuatro></CardHoverQuatro>
+          <CardHoverCinco></CardHoverCinco>
+        </Flex>
+        </ContainerCenter>
+      </ComponenteCardHover>
   </>)
 }
 
