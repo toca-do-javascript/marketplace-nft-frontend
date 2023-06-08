@@ -58,23 +58,23 @@ const InputFieldWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  justify-content: center;
   width: 100%;
+  background: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(18, 18, 18, 0.65);
 `;
 
 const InputField = styled.input`
   type: ${(props) => props.type};
-  background: #d9d9d9;
   padding: 15px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
+  font-size: x-large;
   border: none;
   border-radius: 10px;
-  width: 100%;
+  width:80%;
   height: 2rem;
-  box-shadow: 0px 2px 5px rgba(18, 18, 18, 0.65);
-  margin-right: 5px;
-
+  background: #d9d9d9;
   &:focus {
     outline: none;
   }
