@@ -154,9 +154,7 @@ const Register = () => {
     };
 
     
-    
     const handleClickButton = () =>{
-        console.log(values)
     };
 
     
@@ -187,7 +185,7 @@ const Register = () => {
                                 type="text"
                                 name="loginemail"
                                 onChange={handleChangeValues}
-                            />
+                            /{">"}
 
                             <Input
                                 type="password"
@@ -222,7 +220,7 @@ const Register = () => {
                             />
                             <Button onClick={handleClickButtonLogin}>Create Acount</Button>
                         </form>    
-                    </Login>}
+                    </Login>{"}"}
             </MenuLateral>
        </FullScream>
       
