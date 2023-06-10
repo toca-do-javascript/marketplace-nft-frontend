@@ -1,25 +1,46 @@
-/* eslint-disable react/prop-types */
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { useState } from "react";
 import styled from "styled-components";
 
-const Input = ({type,placeholder,name})=>{   
-    const [isPasswordDisplayed,setPasswordDisplay] = useState(false);
-    const [inputType, setInputType] = useState(type);
-    function handlePasswordDisplay(){
-        setPasswordDisplay(!isPasswordDisplayed)
-        setInputType(isPasswordDisplayed ? type : "text");
-    } 
-        return(
-            <InputWrapper type={type} placeholder={placeholder} name={name}>
-                <TextArea placeholder={placeholder} type={inputType}/>
-                {type==="password"?<MostraSenha passwordDisplay={isPasswordDisplayed} onCheck={handlePasswordDisplay}/>:''}
-            </InputWrapper>
-        )    
-}
+const Input = ({ type, onChanged, name, display }) => {
+  const [isPasswordDisplayed, setPasswordDisplay] = useState(false);
+  const [inputType, setInputType] = useState(type);
+  function handlePasswordDisplay() {
+    setPasswordDisplay(!isPasswordDisplayed);
+    setInputType(isPasswordDisplayed ? type : 'text');
+  }
+  return (
+    <InputWrapper>
+      <InputTitle>{display}</InputTitle>
+      <InputFieldWrapper>
+        <InputField type={inputType} name={name} onChange={onChanged} />
+        {type === 'password' ? (
+          <MostraSenha
+            passwordDisplay={isPasswordDisplayed}
+            onCheck={handlePasswordDisplay}
+          />
+        ) : (
+          ''
+        )}
+      </InputFieldWrapper>
+    </InputWrapper>
+  );
+};
 
-function MostraSenha({passwordDisplay,onCheck}){
-    return passwordDisplay ?<EyeOffIcon onClick={onCheck}/>:<EyeIcon onClick={onCheck}/>
+const InputTitle = styled.div`
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.065em;
+`;
+function MostraSenha({ passwordDisplay, onCheck }) {
+  return passwordDisplay ? (
+    <EyeOffIcon onClick={onCheck} />
+  ) : (
+    <EyeIcon onClick={onCheck} />
+  );
 }
 
 const InputWrapper = styled.div`
@@ -32,6 +53,7 @@ const InputWrapper = styled.div`
     color:  #ab1aad;
     border-radius: 50px; 
     border: solid 1px  #ab1aad;
+    
     &:hover{
         border: solid 1px  #ab1aad ;
     }
@@ -54,6 +76,3 @@ const TextArea = styled.input`
         &:focus{
             outline:none
         }
-
-`
-export  {Input};
