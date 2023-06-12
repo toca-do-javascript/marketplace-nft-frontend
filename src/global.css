@@ -4,3 +4,6 @@ body {
   font-weight: 400;
 }
 
+button, select, a {
+  cursor: pointer;
+}
