@@ -35,6 +35,8 @@ const Profile = ({children}) => {
 
   return (
     <PageWrapper>
+      {/* header */}
+
       <main>
         <ProfileWrapper>
           <ProfileBanner />
@@ -49,15 +51,17 @@ const Profile = ({children}) => {
           {pageSections.map((section) => (
             <SectionTitle
               key={section.title}
-              style={{color: pathname.includes(section.url) || (section.url.toLowerCase() === 'offers' && pathname === '/profile') && '#224abb'}}
+              style={{color: (pathname.includes(section.url) || (section.url.toLowerCase() === 'offers' && pathname === '/profile')) && '#224abb'}}
             >
-              <Link to={section.url} style={{color: 'inherit', textDecoration: 'none', fontWeight: '500'}}>{section.title}</Link>
+              <Link to={`/profile/${section.url}`} style={{color: 'inherit', textDecoration: 'none', fontWeight: '500'}}>{section.title}</Link>
             </SectionTitle>
           ))}
         </Sections>
 
         {children}
       </main>
+
+      {/* footer */}
     </PageWrapper>
   );
 };

@@ -9,15 +9,15 @@ export default function Offers() {
     <>
       <Filters/>
 
-      <div style={{width: '68rem'}}>
-        <div style={{display: 'flex'}}>
+
+      <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem',padding: '2.5rem 0'}}>
+        <div style={{display: 'flex', width: '68rem', margin: '0 auto'}}>
           <CategoryButton >All</CategoryButton>
           <CategoryButton transparent>Artwork</CategoryButton>
           <CategoryButton transparent>Book</CategoryButton>
         </div>
-      </div>
 
-      <CardSection>
+      <CardSection style={{padding: '0 11.25rem'}}>
         <CardWrapper>
           <div>
             <img />
@@ -118,6 +118,7 @@ export default function Offers() {
           </div>
         </CardWrapper>
       </CardSection>
+      </div>
     </>
   )
 }

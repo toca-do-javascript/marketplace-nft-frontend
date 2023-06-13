@@ -10,7 +10,7 @@ import Filters from "../Filters";
     <>
       <Filters/>
 
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem',padding: '2.5rem 0', alignItems: 'center'}}>
         <div style={{width: '68rem'}}>
           <div style={{display: 'flex', flexDirection: 'column', marginBottom: '-3rem', gap: '0.5rem'}}>
             <h2 style={{margin: '0'}}>Collections:</h2>
@@ -22,11 +22,11 @@ import Filters from "../Filters";
             </div>
           </div>
 
+            <CardSection>
+          <CardWrapper>
           <div>
               <img />
             </div>
-            <CardSection>
-          <CardWrapper>
             <div className='cardInfo'>
               <h3>Nome</h3>
               <div className='headers'>
