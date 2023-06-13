@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+
+  .card-header {
+    position: relative;
+  }
+
   width: 284px;
   height: 374px;
 
@@ -19,6 +24,27 @@ export const CardContainer = styled.div`
     margin-left: 25px;
   }
 `
+export const CardAvatares = styled.div`
+  display: flex;
+  padding-left: 24px !important;
+  position: absolute;
+  bottom: -12px;
+  align-items: center;
+  margin-bottom: 11px !important;
+
+  .avatares-img {
+    img {
+    width: 32.25px;
+    height: 30.73px;
+    margin: 0;   
+  } 
+
+    img:nth-child(n+2) {
+      margin-left: -10px;
+    }
+  }
+`;
+
 export const CardInformation = styled.div`
   display: flex;
   align-items: center;
@@ -53,7 +79,7 @@ export const CardInformation = styled.div`
 `
 
 export const CardDivider = styled.div`
-  margin: 10px 24px;
+  margin: 10px 24px !important;
   
   border: 1px solid #F4F4F4;
   border-radius: 2px;
@@ -67,7 +93,7 @@ export const CardFooter = styled.div`
   button {
     width: 97px;
     height: 29px;
-
+    border: none;
     margin-left: 26px;
 
     background: #f5f5f5;
