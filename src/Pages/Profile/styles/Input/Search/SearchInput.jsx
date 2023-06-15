@@ -8,13 +8,13 @@ margin-right: 0.5rem;
 
 width: 100%;
 
-color: var(--text-color);
+color: var(--default-text-color);
 background-color: rgba(152, 152, 152, 0.2);
 
 border: none;
 border-radius: 0.8rem;
 
 &::placeholder {
-  color: var(--text-color);
+  color: var(--default-text-color);
 }
 `;

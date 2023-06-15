@@ -6,7 +6,7 @@ export const Button = styled.button`
   max-width: 100%;
   height: 2.5rem;
 
-  color: var(--text-color);
+  color: var(--default-text-color);
   background-color: ${(props) => props.fullWidth ? 'var(--btnColor)' : 'rgba(152, 152, 152, 0.2)'};
 
   border: none;

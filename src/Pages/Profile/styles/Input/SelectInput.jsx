@@ -7,7 +7,7 @@ margin-right: 0.5rem;
 width: 9rem;
 height: 2.5rem;
 
-color: var(--text-color);
+color: var(--default-text-color);
 background-color: rgba(152, 152, 152, 0.2);
 
 border: none;

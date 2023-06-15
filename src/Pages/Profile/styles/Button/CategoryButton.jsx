@@ -5,7 +5,7 @@ export const CategoryButton = styled.button`
   height: fit-content;
 
   font-size: 0.75rem;
-  color: white;
+  color: var(--default-text-color);
 
   background-color: ${(props) => props.transparent ? 'transparent' : 'var(--btnColor)'};
 
