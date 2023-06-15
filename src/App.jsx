@@ -5,6 +5,8 @@ import Offers from './Pages/Profile/components/SubPages/Offers';
 import Register from './Pages/Sign/Sign';
 import Header from './Ui/Components/Header';
 
+import Main from "./Pages/Home/Home";
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
           <Route path='/profile/collection'   element={<Profile><MyCollection/></Profile>}/>
           <Route path='/profile/favorited'  element={<Profile><Favorited/></Profile>}/>
         </Route>
+        <Route path='/register' element={<Register/>} />
+        <Route path='/' element={<Main/>} />
       </Routes>
     </Router>
   );
