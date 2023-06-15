@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-
 import styled from "styled-components"
 import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/selo.png";
+import imgSelo from "../../Ui/Img/Selo.png";
 import iconFast from "../../Ui/Img/icons/card-tick.png";
 import iconSafe from "../../Ui/Img/icons/chart-square.png";
 import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
@@ -44,7 +42,7 @@ const TextDecoder = styled.div`
   font-weight: 200;
   font-size: 17px;
   line-height: 160%;
-  color: #FFFFFF;       
+  color: #FFFFFF;
 `;
 
 const ButtonColletion = styled.div`
@@ -70,7 +68,7 @@ const CardBoxDado = styled.div`
   margin-top: 40px;
 `;
 
-const Box = styled.div` 
+const Box = styled.div`
 `;
 
 const NunberValor = styled.div`
@@ -123,7 +121,7 @@ const CardNomeArtista = styled.div`
   padding-top: 15px;
   padding-left: 10px;
   font-size:20px ;
-  font-weight:800 ;  
+  font-weight:800 ;
 `;
 
 const CardBoxDados = styled.div`
@@ -140,7 +138,7 @@ const CardText = styled.div`
   color: white;
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 500;       
+  font-weight: 500;
 `;
 
 const CardPrice = styled.div`
@@ -224,7 +222,7 @@ const IconFast = styled.div`
   height: 35px;
   width: 35px;
   margin-top: 25px;
-  margin-right: 17px; 
+  margin-right: 17px;
 `;
 
 const IconSafe = styled.div`
@@ -233,7 +231,7 @@ const IconSafe = styled.div`
   width: 35px;
   margin-top: 25px;
   margin-right: 17px;
-  background-image: url(${iconSafe}); 
+  background-image: url(${iconSafe});
 `;
 
 const ItemEnd = styled.div`
@@ -395,7 +393,7 @@ const ButtonsFilter = styled.div`
 `;
 
 const BoxCategory = styled.div`
-  
+
 `;
 
 const MenuFilter = styled.div`
@@ -520,7 +518,7 @@ const Main = () => {
               </div>
             </Flex>
           </ItemEnd>
-          
+
         </Flex>
       </ContainerTransaction>
       {/* Card hover */}
