@@ -1,4 +1,6 @@
 :root {
   --btnColor: #531885;
-  ;
+  --default-background-color: #000000;
+  --default-text-color: #ffffff;
 }
+
