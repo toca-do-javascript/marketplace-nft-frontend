@@ -1,6 +1,9 @@
-import { EyeIcon, EyeOffIcon } from "lucide-react";
-import { useState } from "react";
-import styled from "styled-components";
+import { EyeIcon, EyeOffIcon } from 'lucide-react';
+
+import { useState } from 'react';
+import styled from 'styled-components';
+
+/* type,title,name */
 
 const Input = ({ type, onChanged, name, display }) => {
   const [isPasswordDisplayed, setPasswordDisplay] = useState(false);
@@ -44,35 +47,36 @@ function MostraSenha({ passwordDisplay, onCheck }) {
 }
 
 const InputWrapper = styled.div`
-    display: flex;
-    width: 50%;
-    margin: auto;   
-    padding: 15px;
-    background: #181022;
-    margin-bottom: 20px;
-    color:  #ab1aad;
-    border-radius: 50px; 
-    border: solid 1px  #ab1aad;
-    
-    &:hover{
-        border: solid 1px  #ab1aad ;
-    }
-    ::placeholder {
-        color:   #ab1aad
-    }
-`
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+`;
+const InputFieldWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  background: #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(18, 18, 18, 0.65);
+`;
 
-const TextArea = styled.input`
-        display: inline-block;
-        type:${(props)=>props.type};
-        resize:none;
-        flex: 100%;
-        text-align: center;
-        font-weight: 700;
-        color:  #ab1aad;
-        background: #181022;
-        border: solid 0px  #ab1aad;
-
-        &:focus{
-            outline:none
-        }
+const InputField = styled.input`
+  type: ${(props) => props.type};
+  padding: 15px;
+  text-align: left;
+  font-weight: 700;
+  font-size: x-large;
+  border: none;
+  border-radius: 10px;
+  width:80%;
+  height: 2rem;
+  background: #d9d9d9;
+  &:focus {
+    outline: none;
+  }
+`;
+export { Input };
