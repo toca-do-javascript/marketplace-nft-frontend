@@ -1,4 +1,5 @@
 import Register from './Pages/Sign/Sign';
+import { Cards } from './Ui/Components/Cards';
 import Header from './Ui/Components/Header';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
