@@ -2,6 +2,8 @@ import Profile from './Pages/Profile/Profile';
 import Favorited from './Pages/Profile/components/SubPages/Favorited';
 import MyCollection from './Pages/Profile/components/SubPages/MyCollection';
 import Offers from './Pages/Profile/components/SubPages/Offers';
+import Created  from './Pages/Profile/components/SubPages/Created';
+
 import Register from './Pages/Sign/Sign';
 import Header from './Ui/Components/Header';
 
@@ -20,6 +22,8 @@ const App = () => {
           <Route path='/profile/offers'   element={<Profile><Offers/></Profile>}/>
           <Route path='/profile/collection'   element={<Profile><MyCollection/></Profile>}/>
           <Route path='/profile/favorited'  element={<Profile><Favorited/></Profile>}/>
+          <Route path='/profile/created'  element={<Profile><Created/></Profile>}/>
+
         </Route>
         <Route path='/register' element={<Register/>} />
         <Route path='/' element={<Main/>} />
