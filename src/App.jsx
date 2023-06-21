@@ -1,11 +1,9 @@
-import Footer from './Ui/Components/Footer/Footer';
 import Profile from './Pages/Profile/Profile';
 import Favorited from './Pages/Profile/components/SubPages/Favorited';
 import MyCollection from './Pages/Profile/components/SubPages/MyCollection';
 import Offers from './Pages/Profile/components/SubPages/Offers';
 import Register from './Pages/Sign/Sign';
 import Header from './Ui/Components/Header';
-
 import Main from './Pages/Home/Home';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

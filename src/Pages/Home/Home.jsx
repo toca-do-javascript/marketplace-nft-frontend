@@ -1,22 +1,28 @@
-import styled from "styled-components"
-import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/Selo.png";
-import iconFast from "../../Ui/Img/icons/card-tick.png";
-import iconSafe from "../../Ui/Img/icons/chart-square.png";
-import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
-import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
-import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
-import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
-import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
-import { useState } from "react";
+import styled from 'styled-components';
+import { SiEthereum } from 'react-icons/si';
+import imgSelo from '../../Ui/Img/Selo.png';
+import iconFast from '../../Ui/Img/icons/card-tick.png';
+import iconSafe from '../../Ui/Img/icons/chart-square.png';
+import cardHoverUm from '../../Ui/Img/img-card-hover/CardHoverUm.png';
+import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
+import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
+import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
+import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
+import { useState } from 'react';
 
 const TAGHEADER = styled.div`
   height: 10vh;
 `;
 
 const HeaderPagina = styled.div`
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 87%, rgba(198,42,234,1) 100%);  height: 90vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 87%,
+    rgba(198, 42, 234, 1) 100%
+  );
+  height: 90vh;
   display: flex;
 `;
 
@@ -31,7 +37,7 @@ const TextTitle = styled.div`
   font-size: 35px;
   line-height: 46px;
   letter-spacing: 0.015em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 180px;
   padding-left: 100px;
 `;
@@ -42,7 +48,7 @@ const TextDecoder = styled.div`
   font-weight: 200;
   font-size: 17px;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #ffffff;
 `;
 
 const ButtonColletion = styled.div`
@@ -50,7 +56,7 @@ const ButtonColletion = styled.div`
   padding: 10px;
   width: 30%;
   border-radius: 10px;
-  margin-left: 170px ;
+  margin-left: 170px;
   text-align: center;
   color: white;
   font-family: 'Poppins';
@@ -68,8 +74,7 @@ const CardBoxDado = styled.div`
   margin-top: 40px;
 `;
 
-const Box = styled.div`
-`;
+const Box = styled.div``;
 
 const NunberValor = styled.div`
   font-family: 'Poppins';
@@ -93,7 +98,7 @@ const BoxImg1 = styled.div`
   width: 400px;
   background-size: cover;
   border-radius: 20px;
-  background-image: url("https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/03154647/CatVader.png");
+  background-image: url('https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/03154647/CatVader.png');
 `;
 
 const CardNftName = styled.div`
@@ -107,7 +112,7 @@ const CardNftName = styled.div`
 `;
 
 const CardImgArtista = styled.div`
-  background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600');
   border-radius: 100%;
   background-size: cover;
   margin-left: 20px;
@@ -120,8 +125,8 @@ const CardNomeArtista = styled.div`
   width: 100%;
   padding-top: 15px;
   padding-left: 10px;
-  font-size:20px ;
-  font-weight:800 ;
+  font-size: 20px;
+  font-weight: 800;
 `;
 
 const CardBoxDados = styled.div`
@@ -160,7 +165,7 @@ const CardDate = styled.div`
 `;
 
 const Boximg2 = styled.div`
-  background-image: url("https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/05/21101412/piramide-scaled.jpg");
+  background-image: url('https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/05/21101412/piramide-scaled.jpg');
   background-size: cover;
   height: 360px;
   margin-top: 170px;
@@ -169,7 +174,7 @@ const Boximg2 = styled.div`
 `;
 
 const Boximg3 = styled.div`
-  background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600');
   background-size: cover;
   height: 320px;
   margin-top: 190px;
@@ -189,8 +194,13 @@ const SeloEtheriun = styled.div`
 
 const ContainerTransaction = styled.div`
   height: 25vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(198,42,234,1) 95%, rgba(198,42,234,1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(198, 42, 234, 1) 95%,
+    rgba(198, 42, 234, 1) 100%
+  );
 `;
 
 const ItemStart = styled.div`
@@ -203,7 +213,6 @@ const ItemStart = styled.div`
   padding-left: 10%;
   color: #fff;
   margin-top: -13px;
-
 `;
 
 const ItemMid = styled.div`
@@ -278,7 +287,7 @@ const CardHoverUm = styled.div`
   margin-top: 55px;
   margin-right: -60px;
   border-radius: 20px;
-  &:hover{
+  &:hover {
     transition: 0.4s;
     transform: scale(1.1, 1.1);
     z-index: 3;
@@ -294,7 +303,7 @@ const CardHoverDois = styled.div`
   margin-right: -30px;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  &:hover{
+  &:hover {
     transition: 0.4s;
     transform: scale(1.1, 1.1);
     z-index: 3;
@@ -309,7 +318,7 @@ const CardHoverTres = styled.div`
   z-index: 2;
   border-radius: 30px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  &:hover{
+  &:hover {
     transition: 0.4s;
     transform: scale(1.1, 1.1);
     z-index: 3;
@@ -326,7 +335,7 @@ const CardHoverQuatro = styled.div`
   border-radius: 20px;
   z-index: 1;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-  &:hover{
+  &:hover {
     transition: 0.4s;
     transform: scale(1.1, 1.1);
     z-index: 3;
@@ -341,7 +350,7 @@ const CardHoverCinco = styled.div`
   margin-top: 55px;
   margin-left: -60px;
   border-radius: 20px;
-  &:hover{
+  &:hover {
     transition: 0.4s;
     transform: scale(1.1, 1.1);
     z-index: 3;
@@ -349,8 +358,8 @@ const CardHoverCinco = styled.div`
 `;
 
 const ContainerCenter = styled.div`
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const ContainerButton = styled.div`
@@ -362,8 +371,8 @@ const ButtonExplore = styled.div`
   border-radius: 14px;
   color: white;
   text-align: center;
-  background:#531885;
-  padding: 20px ;
+  background: #531885;
+  padding: 20px;
   width: 200px;
   margin: auto;
   font-family: 'Poppins';
@@ -374,7 +383,12 @@ const ButtonExplore = styled.div`
 `;
 
 const ContainerFilterSection = styled.div`
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(79, 21, 91, 0.2) 96.73%), linear-gradient(180deg, #000000 0%, #3C0C46 92.36%), #000000;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(79, 21, 91, 0.2) 96.73%
+    ),
+    linear-gradient(180deg, #000000 0%, #3c0c46 92.36%), #000000;
   height: 100vh;
   padding: 100px;
 `;
@@ -392,9 +406,7 @@ const ButtonsFilter = styled.div`
   margin-top: 20px;
 `;
 
-const BoxCategory = styled.div`
-
-`;
+const BoxCategory = styled.div``;
 
 const MenuFilter = styled.div`
   color: white;
@@ -408,10 +420,10 @@ const MenuFilter = styled.div`
   font-size: 14px;
 `;
 
-function ButtonCategory({init,children }) {
-  const [cor, setCor] = useState("")
+function ButtonCategory({ init, children }) {
+  const [cor, setCor] = useState('');
   return (
-    <ButtonWrapper onClick={()=>setCor(init)} backgroundColor={cor}>
+    <ButtonWrapper onClick={() => setCor(init)} backgroundColor={cor}>
       {children}
     </ButtonWrapper>
   );
@@ -430,95 +442,103 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-
-const Foterr = styled.div`
-  height: 1000px ;
-  background: black;
+const Footer = styled.div`
+  height: 1000px;
+  background: #1e1f28;
 `;
 
 const Main = () => {
+  const [category, setCategory] = useState('blue');
 
-  const [category, setCategory] = useState("blue")
-
-  return (<>
+  return (
+    <>
       <TAGHEADER>CONPONENTE DO HEARDER</TAGHEADER>
       {/* Componente da página principal */}
       <HeaderPagina>
         <Headerbox1>
-          <TextTitle>DISCOVER, AND COLLECT<br/> DIGITAL ART NFT</TextTitle>
-          <TextDecoder>Digital marketplace for crypto collectibles and non-fungible
-            <br/> tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</TextDecoder>
+          <TextTitle>
+            DISCOVER, AND COLLECT
+            <br /> DIGITAL ART NFT
+          </TextTitle>
+          <TextDecoder>
+            Digital marketplace for crypto collectibles and non-fungible
+            <br /> tokens (NFTs). Buy, Sell, and discover exclusive digital
+            assets.
+          </TextDecoder>
           <ButtonColletion>Explore Collection</ButtonColletion>
           <CardBoxDado>
-          <Flex style={{justifyContent:"space-between"}}>
-            <Box>
+            <Flex style={{ justifyContent: 'space-between' }}>
+              <Box>
                 <NunberValor>98K+</NunberValor>
                 <NameArt>Artwork</NameArt>
-            </Box>
-            <Box>
+              </Box>
+              <Box>
                 <NunberValor>12K+</NunberValor>
-                <NameArt>Auction
-                </NameArt>
-            </Box>
-            <Box>
+                <NameArt>Auction</NameArt>
+              </Box>
+              <Box>
                 <NunberValor>15K+</NunberValor>
                 <NameArt> Artist</NameArt>
-            </Box>
-          </Flex>
+              </Box>
+            </Flex>
           </CardBoxDado>
         </Headerbox1>
         <Headerbox2>
-            <Flex>
-              <BoxImg1>
-                <CardNftName>Art A.nft</CardNftName>
+          <Flex>
+            <BoxImg1>
+              <CardNftName>Art A.nft</CardNftName>
+              <Flex>
+                <CardImgArtista></CardImgArtista>
+                <CardNomeArtista>ArtLian</CardNomeArtista>
+              </Flex>
+              <CardBoxDados>
                 <Flex>
-                  <CardImgArtista></CardImgArtista>
-                  <CardNomeArtista>ArtLian</CardNomeArtista>
+                  <CardText>Current Bid</CardText>
+                  <CardText style={{ paddingLeft: '100px' }}>Ends in</CardText>
                 </Flex>
-                <CardBoxDados>
-                  <Flex>
-                    <CardText>Current Bid</CardText>
-                    <CardText style={{paddingLeft:"100px"}}>Ends in</CardText>
-                  </Flex>
-                  <Flex>
-                    <SiEthereum style={{color:"white", padding:"15px"}}/>
-                    <CardPrice>0.25 ETH</CardPrice>
-                    <CardDate style={{paddingLeft:"70px"}}>12h  43m  42s</CardDate>
-                  </Flex>
-                  <SeloEtheriun>
-                  </SeloEtheriun>
-                </CardBoxDados>
-              </BoxImg1>
-              <Boximg2>
-              </Boximg2>
-              <Boximg3>
-              </Boximg3>
-            </Flex>
+                <Flex>
+                  <SiEthereum style={{ color: 'white', padding: '15px' }} />
+                  <CardPrice>0.25 ETH</CardPrice>
+                  <CardDate style={{ paddingLeft: '70px' }}>
+                    12h 43m 42s
+                  </CardDate>
+                </Flex>
+                <SeloEtheriun></SeloEtheriun>
+              </CardBoxDados>
+            </BoxImg1>
+            <Boximg2></Boximg2>
+            <Boximg3></Boximg3>
+          </Flex>
         </Headerbox2>
       </HeaderPagina>
       {/* Componente do card */}
       <ContainerTransaction>
         <Flex>
-          <ItemStart>The amazing NFT art <br/> of the world here</ItemStart>
+          <ItemStart>
+            The amazing NFT art <br /> of the world here
+          </ItemStart>
           <ItemMid>
             <Flex>
               <IconFast></IconFast>
               <div>
                 <h3>Fast Transaction</h3>
-                <p style={{fontSize:"18px", fontFamily:"DM Sans"}}>Create collections and sell <br/> your works of art quickly.</p>
+                <p style={{ fontSize: '18px', fontFamily: 'DM Sans' }}>
+                  Create collections and sell <br /> your works of art quickly.
+                </p>
               </div>
             </Flex>
           </ItemMid>
           <ItemEnd>
-          <Flex>
+            <Flex>
               <IconSafe></IconSafe>
               <div>
                 <h3>Safe Transaction </h3>
-                <p style={{fontSize:"18px", fontFamily:"DM Sans"}}>Make secure transactions <br/> through our system.</p>
+                <p style={{ fontSize: '18px', fontFamily: 'DM Sans' }}>
+                  Make secure transactions <br /> through our system.
+                </p>
               </div>
             </Flex>
           </ItemEnd>
-
         </Flex>
       </ContainerTransaction>
       {/* Card hover */}
@@ -530,13 +550,13 @@ const Main = () => {
           <p>and trade in just one place!</p>
         </ParagrafoCard>
         <ContainerCenter>
-        <Flex style={{width:'auto', margin:'auto'}}>
-          <CardHoverUm></CardHoverUm>
-          <CardHoverDois></CardHoverDois>
-          <CardHoverTres></CardHoverTres>
-          <CardHoverQuatro></CardHoverQuatro>
-          <CardHoverCinco></CardHoverCinco>
-        </Flex>
+          <Flex style={{ width: 'auto', margin: 'auto' }}>
+            <CardHoverUm></CardHoverUm>
+            <CardHoverDois></CardHoverDois>
+            <CardHoverTres></CardHoverTres>
+            <CardHoverQuatro></CardHoverQuatro>
+            <CardHoverCinco></CardHoverCinco>
+          </Flex>
         </ContainerCenter>
       </ComponenteCardHover>
       {/* Button Explore */}
@@ -547,14 +567,14 @@ const Main = () => {
       <ContainerFilterSection>
         <Discovery>Discover more NFTs</Discovery>
         <ButtonsFilter>
-          <Flex style={{justifyContent:"space-between"}}>
+          <Flex style={{ justifyContent: 'space-between' }}>
             <BoxCategory>
               <Flex>
-                <ButtonCategory init={"red"}>All Categories</ButtonCategory>
-                <ButtonCategory init={"red"} >Art</ButtonCategory>
-                <ButtonCategory init={"red"}>Celebrities</ButtonCategory>
-                <ButtonCategory init={"red"}>Gaming</ButtonCategory>
-                <ButtonCategory init={"red"} >Sport</ButtonCategory>
+                <ButtonCategory init={'red'}>All Categories</ButtonCategory>
+                <ButtonCategory init={'red'}>Art</ButtonCategory>
+                <ButtonCategory init={'red'}>Celebrities</ButtonCategory>
+                <ButtonCategory init={'red'}>Gaming</ButtonCategory>
+                <ButtonCategory init={'red'}>Sport</ButtonCategory>
               </Flex>
             </BoxCategory>
             <MenuFilter>Filter</MenuFilter>
@@ -562,10 +582,9 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
-
-
-      <Foterr></Foterr>
-  </>)
-}
+      <Footer></Footer>
+    </>
+  );
+};
 
 export default Main;
