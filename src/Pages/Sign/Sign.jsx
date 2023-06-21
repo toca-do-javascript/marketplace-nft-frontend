@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { Button } from '../../Ui/Components/Button/Button';
+import { Button } from '../../Ui/Components/Button/Button.jsx';
+import { Input } from '../../Ui/Components/Input/Input.jsx';
 
 const Title = styled.div`
   padding-top: 150px;
@@ -51,22 +52,33 @@ const FullScream = styled.div`
 
 const Login = styled.div`
   margin-top: 60px;
+
+  Button {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 980px) {
+    Button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
 `;
 
-const Button = styled.div`
-  background: #ab1aad;
-  width: 50%;
-  color: white;
-  font-size: 12px;
-  padding: 15px;
+const TextField = styled.input`
+  display: block;
+  width: 40%;
   margin: auto;
+  background: #d9d9d9;
+  padding: 15px;
+  margin-bottom: 20px;
   text-align: center;
-  margin-top: 40px;
-  font-weight: 800;
-  font-family: sans-serif;
+  font-weight: 700;
+  border: none;
   border-radius: 10px;
-  letter-spacing: 0.2em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 const Span = styled.div`
@@ -100,7 +112,6 @@ const TextInput = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   letter-spacing: 0.065em;
 `;
 
@@ -154,7 +165,9 @@ const Register = () => {
     }));
   };
 
-  const handleClickButton = () => {};
+  const handleClickButton = () => {
+    console.log(values);
+  };
 
   return (
     <>
@@ -172,41 +185,27 @@ const Register = () => {
           <Title>SIGN IN</Title>
           <Login>
             <form>
-              type="text" name="loginemail" onChange={handleChangeValues}/{'>'}
               <Input
-                type="password"
-                placeholder="Enter you Password"
-                name="loginpassword"
-                onChange={handleChangeValues}
+                type="email"
+                display="E-mail"
+                name="loginemail"
+                onChanged={handleChangeValues}
               />
-              <Button onClick={handleClickButton}>Login Acount</Button>
+              <Input
+                display="Senha"
+                type="password"
+                name="loginemail"
+                onChanged={handleChangeValues}
+              />
+              <Button onClick={handleClickButton}> Explore </Button>
             </form>
           </Login>
-          :
-          <Login>
-            <form>
-              <Input
-                type="text"
-                placeholder="Enter your E-mail"
-                name="Remail"
-                onChange={handleChangeValuesLogin}
-              />
-              <Input
-                type="password"
-                placeholder="Enter your Password"
-                name="Rpassword"
-                onChange={handleChangeValuesLogin}
-              />
-              <Input
-                type="password"
-                placeholder="Repeat your Password"
-                name="Cpasswor"
-                onChange={handleChangeValuesLogin}
-              />
-              <Button onClick={handleClickButtonLogin}>Create Acount</Button>
-            </form>
-          </Login>
-          {'}'}
+          <ContaNova>
+            Não tenho conta
+            <br />
+            <Span>Clique aqui</Span>
+          </ContaNova>
+          <CopyRigth>Copyrigth 2022 NFTART.All rigths reserved.</CopyRigth>
         </MenuLateral>
       </FullScream>
     </>
