@@ -8,6 +8,7 @@ import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
 import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
 import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
 import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
+import Footer from '../../Ui/Components/Footer/Style';
 import { useState } from 'react';
 
 const TAGHEADER = styled.div`
@@ -442,10 +443,10 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-const Footer = styled.div`
-  height: 1000px;
-  background: #1e1f28;
-`;
+// const Footer = styled.div`
+//   height: 1000px;
+//   background: #1e1f28;
+// `;
 
 const Main = () => {
   const [category, setCategory] = useState('blue');

@@ -49,7 +49,7 @@ const App = () => {
           />
         </Route>
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Main />} />
+        <Route path="/home" element={<Main />} />
       </Routes>
     </Router>
   );
