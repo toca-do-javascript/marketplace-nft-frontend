@@ -1,4 +1,3 @@
-import Footer from './Ui/Components/Footer/Footer';
 import Profile from './Pages/Profile/Profile';
 import Favorited from './Pages/Profile/components/SubPages/Favorited';
 import MyCollection from './Pages/Profile/components/SubPages/MyCollection';
