@@ -6,7 +6,7 @@ import './style.css';
 
 const Fuut = styled.div`
   background: #1E1F28;
-  height: 2git 0vh;
+  height: 20vh;
   padding-top: 100px;
   text-align: center;
   color: #FFF;

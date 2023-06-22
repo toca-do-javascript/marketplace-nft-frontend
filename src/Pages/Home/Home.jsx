@@ -9,6 +9,7 @@ import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
 import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
 import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
 import { useState } from "react";
+import Footer from "../../Ui/Components/Footer/Footer";
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -584,7 +585,7 @@ const Main = () => {
 
 
 
-      <Foterr></Foterr>
+      <Footer></Footer>
   </>)
 }
 
