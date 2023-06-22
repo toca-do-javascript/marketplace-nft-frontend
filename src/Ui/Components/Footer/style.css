@@ -1,11 +1,6 @@
-.footer {
-background: #1E1F28;
-padding: 3 rem 1 rem 0 1rem;
-height: 5rem;
-align-items: center;
-color: #ffffff;
-}
-
-.footer p {
-  margin-top: 1rem;
+.Link--Footer{
+  color: white;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 2%;
 }
