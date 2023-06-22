@@ -8,7 +8,7 @@ import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
 import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
 import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
 import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
-import Footer from '../../Ui/Components/Footer/Style';
+import Footer from '../../Ui/Components/Footer/Index';
 import { useState } from 'react';
 
 const TAGHEADER = styled.div`
