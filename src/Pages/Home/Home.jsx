@@ -443,6 +443,36 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
+const ContainerSectionExplorer = styled.div`
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+`;
+
+const TitleSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 250px;
+`;
+
+const DescriptionSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: -190px;
+`;
+
 // const Footer = styled.div`
 //   height: 1000px;
 //   background: #1e1f28;
@@ -584,7 +614,11 @@ const Main = () => {
       </ContainerFilterSection>
 
 
-
+      <ContainerSectionExplorer>
+        <TitleSectionExplorer>Check it out right now!</TitleSectionExplorer>
+        <DescriptionSectionExplorer>Enter our world and get the best benefits for free.</DescriptionSectionExplorer>
+        <ButtonExplore>Explore Now</ButtonExplore>
+      </ContainerSectionExplorer>
       <Footer></Footer>
   </>)
 }
