@@ -1,14 +1,15 @@
-import styled from 'styled-components';
-import { SiEthereum } from 'react-icons/si';
-import imgSelo from '../../Ui/Img/Selo.png';
-import iconFast from '../../Ui/Img/icons/card-tick.png';
-import iconSafe from '../../Ui/Img/icons/chart-square.png';
-import cardHoverUm from '../../Ui/Img/img-card-hover/CardHoverUm.png';
-import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
-import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
-import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
-import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
-import { useState } from 'react';
+import styled from "styled-components"
+import { SiEthereum } from "react-icons/si";
+import imgSelo from "../../Ui/Img/Selo.png";
+import iconFast from "../../Ui/Img/icons/card-tick.png";
+import iconSafe from "../../Ui/Img/icons/chart-square.png";
+import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
+import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
+import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
+import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
+import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
+import { useState } from "react";
+import Footer from "../../Ui/Components/Footer/Footer";
 
 const TAGHEADER = styled.div`
   height: 10vh;
