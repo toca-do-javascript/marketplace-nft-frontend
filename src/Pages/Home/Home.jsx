@@ -1,15 +1,15 @@
-import styled from "styled-components"
-import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/Selo.png";
-import iconFast from "../../Ui/Img/icons/card-tick.png";
-import iconSafe from "../../Ui/Img/icons/chart-square.png";
-import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
-import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
-import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
-import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
-import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
-import { useState } from "react";
-import Footer from "../../Ui/Components/Footer/Footer";
+import styled from 'styled-components';
+import { SiEthereum } from 'react-icons/si';
+import imgSelo from '../../Ui/Img/Selo.png';
+import iconFast from '../../Ui/Img/icons/card-tick.png';
+import iconSafe from '../../Ui/Img/icons/chart-square.png';
+import cardHoverUm from '../../Ui/Img/img-card-hover/CardHoverUm.png';
+import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
+import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
+import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
+import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
+import { useState } from 'react';
+import Footer from '../../Ui/Components/Footer/Footer';
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -477,6 +477,10 @@ const DescriptionSectionExplorer = styled.div`
 //   height: 1000px;
 //   background: #1e1f28;
 // `;
+const Foterr = styled.div`
+  height: 1000px;
+  background: black;
+`;
 
 const Main = () => {
   const [category, setCategory] = useState('blue');
@@ -613,14 +617,16 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
-
       <ContainerSectionExplorer>
         <TitleSectionExplorer>Check it out right now!</TitleSectionExplorer>
-        <DescriptionSectionExplorer>Enter our world and get the best benefits for free.</DescriptionSectionExplorer>
+        <DescriptionSectionExplorer>
+          Enter our world and get the best benefits for free.
+        </DescriptionSectionExplorer>
         <ButtonExplore>Explore Now</ButtonExplore>
       </ContainerSectionExplorer>
       <Footer></Footer>
-  </>)
-}
+    </>
+  );
+};
 
 export default Main;

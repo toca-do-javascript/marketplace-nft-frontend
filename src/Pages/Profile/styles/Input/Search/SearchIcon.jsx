@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Search } from 'lucide-react'
+import { Search } from 'lucide-react';
 
 export const SearchIcon = styled(Search)`
   position: absolute;
