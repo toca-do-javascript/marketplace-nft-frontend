@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const SearchWrapper = styled.div`
-position: relative;
+  position: relative;
 
-max-width: 50rem;
-min-width: 8rem;
+  max-width: 50rem;
+  min-width: 8rem;
 `;

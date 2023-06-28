@@ -16,7 +16,7 @@ export const CardWrapper = styled.div`
   img {
     width: 13rem;
     height: 11.25rem;
-  
+
     background-color: grey;
 
     border-radius: 1rem;
@@ -35,27 +35,30 @@ export const CardWrapper = styled.div`
     font-weight: 500;
     margin: 0;
   }
-  .headers, .originalPrice, .auditionRow {
+  .headers,
+  .originalPrice,
+  .auditionRow {
     font-weight: 400;
     font-size: 0.825rem;
   }
 
-  .headers, .auditionRow {
+  .headers,
+  .auditionRow {
     display: flex;
     justify-content: space-between;
   }
 
   .cardInfo .originalPrice {
     text-align: right;
-    color: #6F4FF2;
+    color: #6f4ff2;
   }
 
   .cardInfo .auditionRow {
     font-size: 1rem;
-    color: #6C7AA0;
+    color: #6c7aa0;
   }
 
   button {
     margin-top: 1rem;
   }
-`
+`;
