@@ -473,15 +473,6 @@ const DescriptionSectionExplorer = styled.div`
   margin-bottom: -190px;
 `;
 
-// const Footer = styled.div`
-//   height: 1000px;
-//   background: #1e1f28;
-// `;
-const Foterr = styled.div`
-  height: 1000px;
-  background: black;
-`;
-
 const Main = () => {
   const [category, setCategory] = useState('blue');
 
