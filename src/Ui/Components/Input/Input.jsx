@@ -72,7 +72,7 @@ const InputField = styled.input`
   font-size: x-large;
   border: none;
   border-radius: 10px;
-  width:80%;
+  width: 80%;
   height: 2rem;
   background: #d9d9d9;
   &:focus {

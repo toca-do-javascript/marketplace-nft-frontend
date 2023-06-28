@@ -443,10 +443,10 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-// const Footer = styled.div`
-//   height: 1000px;
-//   background: #1e1f28;
-// `;
+const Foterr = styled.div`
+  height: 1000px;
+  background: black;
+`;
 
 const Main = () => {
   const [category, setCategory] = useState('blue');
@@ -583,10 +583,9 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
-
-
-      <Footer></Footer>
-  </>)
-}
+      <Foterr></Foterr>
+    </>
+  );
+};
 
 export default Main;
