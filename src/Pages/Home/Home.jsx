@@ -1,15 +1,15 @@
-import styled from "styled-components"
-import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/Selo.png";
-import iconFast from "../../Ui/Img/icons/card-tick.png";
-import iconSafe from "../../Ui/Img/icons/chart-square.png";
-import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
-import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
-import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
-import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
-import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
-import { useState } from "react";
-import Footer from "../../Ui/Components/Footer/Footer";
+import styled from 'styled-components';
+import { SiEthereum } from 'react-icons/si';
+import imgSelo from '../../Ui/Img/Selo.png';
+import iconFast from '../../Ui/Img/icons/card-tick.png';
+import iconSafe from '../../Ui/Img/icons/chart-square.png';
+import cardHoverUm from '../../Ui/Img/img-card-hover/CardHoverUm.png';
+import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
+import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.jpg';
+import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
+import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.jpg';
+import { useState } from 'react';
+import Footer from '../../Ui/Components/Footer/Footer';
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -443,9 +443,34 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-const Foterr = styled.div`
-  height: 1000px;
-  background: black;
+const ContainerSectionExplorer = styled.div`
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+`;
+
+const TitleSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 250px;
+`;
+
+const DescriptionSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: -190px;
 `;
 
 const Main = () => {
@@ -583,7 +608,14 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
-      <Foterr></Foterr>
+      <ContainerSectionExplorer>
+        <TitleSectionExplorer>Check it out right now!</TitleSectionExplorer>
+        <DescriptionSectionExplorer>
+          Enter our world and get the best benefits for free.
+        </DescriptionSectionExplorer>
+        <ButtonExplore>Explore Now</ButtonExplore>
+      </ContainerSectionExplorer>
+      <Footer></Footer>
     </>
   );
 };
