@@ -458,8 +458,6 @@ const TitleSectionExplorer = styled.div`
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
-  text-align: center;
-  margin-top: 250px;
 `;
 
 const DescriptionSectionExplorer = styled.div`
@@ -468,9 +466,17 @@ const DescriptionSectionExplorer = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  text-align: center;
   margin-top: 5px;
-  margin-bottom: -190px;
+`;
+
+const ButtonExplorer = styled.button`
+  border-radius: 14px;
+  color: white;
+  background: #531885;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 1.5rem 4rem;
 `;
 
 const Main = () => {
@@ -613,7 +619,7 @@ const Main = () => {
         <DescriptionSectionExplorer>
           Enter our world and get the best benefits for free.
         </DescriptionSectionExplorer>
-        <ButtonExplore>Explore Now</ButtonExplore>
+        <ButtonExplorer>Explore Now</ButtonExplorer>
       </ContainerSectionExplorer>
       <Footer></Footer>
     </>
