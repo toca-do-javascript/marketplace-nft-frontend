@@ -1,15 +1,15 @@
-import styled from "styled-components"
-import { SiEthereum } from "react-icons/si";
-import imgSelo from "../../Ui/Img/Selo.png";
-import iconFast from "../../Ui/Img/icons/card-tick.png";
-import iconSafe from "../../Ui/Img/icons/chart-square.png";
-import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
-import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
-import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
-import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
-import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
-import { useState } from "react";
-import Footer from "../../Ui/Components/Footer/Footer";
+import styled from 'styled-components';
+import { SiEthereum } from 'react-icons/si';
+import imgSelo from '../../Ui/Img/Selo.png';
+import iconFast from '../../Ui/Img/icons/card-tick.png';
+import iconSafe from '../../Ui/Img/icons/chart-square.png';
+import cardHoverUm from '../../Ui/Img/img-card-hover/CardHoverUm.png';
+import cardHoverDois from '../../Ui/Img/img-card-hover/CardHoverDois.png';
+import cardHoverTres from '../../Ui/Img/img-card-hover/CardHoverTreis.png';
+import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
+import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.png';
+import { useState } from 'react';
+import Footer from '../../Ui/Components/Footer/Footer';
 
 const TAGHEADER = styled.div`
   height: 10vh;
@@ -99,7 +99,7 @@ const BoxImg1 = styled.div`
   width: 400px;
   background-size: cover;
   border-radius: 20px;
-  background-image: url('https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/03154647/CatVader.png');
+  background-image: url('/src/Ui/Img/img-card-hover/ImgAdventureTime.png');
 `;
 
 const CardNftName = styled.div`
@@ -113,12 +113,12 @@ const CardNftName = styled.div`
 `;
 
 const CardImgArtista = styled.div`
-  background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-image: url('/src/Ui/Img/img-card-hover/ImgPerfilUsuarioArt.png');
   border-radius: 100%;
   background-size: cover;
   margin-left: 20px;
   height: 50px;
-  width: 70px;
+  width: 66px;
 `;
 
 const CardNomeArtista = styled.div`
@@ -166,7 +166,7 @@ const CardDate = styled.div`
 `;
 
 const Boximg2 = styled.div`
-  background-image: url('https://s3-nftrend-storage.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/05/21101412/piramide-scaled.jpg');
+  background-image: url('/src/Ui/Img/img-card-hover/ImgCardHomeArt.png');
   background-size: cover;
   height: 360px;
   margin-top: 170px;
@@ -175,7 +175,7 @@ const Boximg2 = styled.div`
 `;
 
 const Boximg3 = styled.div`
-  background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-image: url('/src/Ui/Img/img-card-hover/ImgHomeUm.png');
   background-size: cover;
   height: 320px;
   margin-top: 190px;
@@ -583,10 +583,9 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
-
-
       <Footer></Footer>
-  </>)
-}
+    </>
+  );
+};
 
 export default Main;
