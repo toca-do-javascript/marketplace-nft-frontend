@@ -5,11 +5,11 @@ import Offers from './Pages/Profile/components/SubPages/Offers';
 import Created from './Pages/Profile/components/SubPages/Created';
 
 import Register from './Pages/Sign/Sign';
-import Header from './Ui/Components/Header';
 
 import Main from './Pages/Home/Home';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './Ui/Components/ Header';
 
 const App = () => {
   return (

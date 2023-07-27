@@ -10,10 +10,8 @@ import cardHoverQuatro from '../../Ui/Img/img-card-hover/CardHoverQuatro.png';
 import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.png';
 import { useState } from 'react';
 import Footer from '../../Ui/Components/Footer/Footer';
+import { Header } from '../../Ui/Components/ Header';
 
-const TAGHEADER = styled.div`
-  height: 10vh;
-`;
 
 const HeaderPagina = styled.div`
   background: rgb(0, 0, 0);
@@ -484,8 +482,7 @@ const Main = () => {
 
   return (
     <>
-      <TAGHEADER>CONPONENTE DO HEARDER</TAGHEADER>
-      {/* Componente da página principal */}
+      <Header />
       <HeaderPagina>
         <Headerbox1>
           <TextTitle>
