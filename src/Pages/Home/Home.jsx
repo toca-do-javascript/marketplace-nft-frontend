@@ -443,10 +443,41 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-// const Footer = styled.div`
-//   height: 1000px;
-//   background: #1e1f28;
-// `;
+const ContainerSectionExplorer = styled.div`
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+`;
+
+const TitleSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+`;
+
+const DescriptionSectionExplorer = styled.div`
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 5px;
+`;
+
+const ButtonExplorer = styled.button`
+  border-radius: 14px;
+  color: white;
+  background: #531885;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 1.5rem 4rem;
+`;
 
 const Main = () => {
   const [category, setCategory] = useState('blue');
@@ -583,6 +614,13 @@ const Main = () => {
         </ButtonsFilter>
       </ContainerFilterSection>
 
+      <ContainerSectionExplorer>
+        <TitleSectionExplorer>Check it out right now!</TitleSectionExplorer>
+        <DescriptionSectionExplorer>
+          Enter our world and get the best benefits for free.
+        </DescriptionSectionExplorer>
+        <ButtonExplorer>Explore Now</ButtonExplorer>
+      </ContainerSectionExplorer>
       <Footer></Footer>
     </>
   );
