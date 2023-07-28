@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { SiEthereum } from 'react-icons/si';
+import { FaWallet, FaPlusCircle, FaClipboardCheck } from 'react-icons/Fa';
+import { BsCollectionFill } from 'react-icons/Bs';
 import imgSelo from '../../Ui/Img/Selo.png';
 import iconFast from '../../Ui/Img/icons/card-tick.png';
 import iconSafe from '../../Ui/Img/icons/chart-square.png';
@@ -11,7 +13,7 @@ import cardHoverCinco from '../../Ui/Img/img-card-hover/CardHoverCinco.png';
 import { useState } from 'react';
 import Footer from '../../Ui/Components/Footer/Footer';
 import { Header } from '../../Ui/Components/ Header';
-
+import StepCreateSell from '../../Ui/Components/Steps/StepCreateSell';
 
 const HeaderPagina = styled.div`
   background: rgb(0, 0, 0);
@@ -441,6 +443,33 @@ const ButtonWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
+const ContainerCreateSell = styled.div`
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+`;
+
+const TitleStepSection = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 5rem;
+`;
+
+const ContainerCardsSteps = styled.div`
+  display: flex;
+`;
+
+const LinesDivider = styled.div`
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+`;
+
 const ContainerSectionExplorer = styled.div`
   background: #000;
   display: flex;
@@ -610,6 +639,35 @@ const Main = () => {
           </Flex>
         </ButtonsFilter>
       </ContainerFilterSection>
+
+      <ContainerCreateSell>
+      <TitleStepSection>CREATE AND SELL YOUR NFTs</TitleStepSection>
+      <ContainerCardsSteps>
+        <StepCreateSell 
+          icon={FaWallet}
+          title="Another title"
+          description="Create your account in a simple way to get the best tools."
+        />
+        <LinesDivider>--------------</LinesDivider>
+        <StepCreateSell 
+          icon={BsCollectionFill}
+          title="Create your collection"
+          description="Create your collection of nfts and make them available to your costumers."
+        />
+       <LinesDivider>--------------</LinesDivider>
+        <StepCreateSell 
+          icon={FaPlusCircle}
+          title="Add your NFTs"
+          description="Add the works in an organized and clear way for sale."
+        />
+        <LinesDivider>--------------</LinesDivider>
+        <StepCreateSell
+          icon={FaClipboardCheck}
+          title="List the for sale"
+          description="Make your works available for sale with just one click."
+        />
+      </ContainerCardsSteps>
+    </ContainerCreateSell>
 
       <ContainerSectionExplorer>
         <TitleSectionExplorer>Check it out right now!</TitleSectionExplorer>
