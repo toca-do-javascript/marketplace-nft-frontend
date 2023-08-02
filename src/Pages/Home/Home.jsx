@@ -50,17 +50,27 @@ const TextDecoder = styled.div`
   color: #ffffff;
 `;
 
-const ButtonColletion = styled.div`
+const ButtonColletion = styled.button`
   background: #531885;
   padding: 10px;
-  width: 30%;
-  border-radius: 10px;
-  margin-left: 170px;
+  width: 262px;
+  height: 64px;
+  border-radius: 14px;
+  margin-left: 100px;
   text-align: center;
   color: white;
   font-family: 'Poppins';
-  margin-top: 30px;
+  font-size: 20px;
+  margin-top: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1.3px;
   font-weight: 700;
+  cursor: pointer;
+  border: 0;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 const Flex = styled.div`
@@ -274,7 +284,7 @@ const ParagrafoCard = styled.div`
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  margin-top: -30px;
+  margin-top: 2px;
   margin-bottom: 90px;
 `;
 
@@ -362,12 +372,19 @@ const ContainerCenter = styled.div`
 `;
 
 const ContainerButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: black;
   padding-top: 90px;
 `;
 
-const ButtonExplore = styled.div`
+const ButtonExplore = styled.button`
+  width: 263px;
+  height: 64px;
+  border: 0;
   border-radius: 14px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   text-align: center;
   background: #531885;
@@ -376,9 +393,14 @@ const ButtonExplore = styled.div`
   margin: auto;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 const ContainerFilterSection = styled.div`
@@ -428,8 +450,9 @@ function ButtonCategory({ init, children }) {
   );
 }
 
-const ButtonWrapper = styled.div`
+const ButtonWrapper = styled.button`
   color: white;
+  border: 0;
   margin-right: 10px;
   background: rgba(220, 220, 220, 0.2);
   border-radius: 100px;
@@ -439,6 +462,10 @@ const ButtonWrapper = styled.div`
   font-weight: 500;
   font-size: 14px;
   background-color: ${(props) => props.backgroundColor};
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 const ContainerSectionExplorer = styled.div`
@@ -468,13 +495,20 @@ const DescriptionSectionExplorer = styled.div`
 `;
 
 const ButtonExplorer = styled.button`
+  border: 0;
   border-radius: 14px;
   color: white;
   background: #531885;
-  font-weight: 400;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1.3px;
   font-size: 20px;
   margin-top: 30px;
   padding: 1.5rem 4rem;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;
 
 const Main = () => {
@@ -532,11 +566,11 @@ const Main = () => {
                     12h 43m 42s
                   </CardDate>
                 </Flex>
-                <SeloEtheriun></SeloEtheriun>
+                <SeloEtheriun />
               </CardBoxDados>
             </BoxImg1>
-            <Boximg2></Boximg2>
-            <Boximg3></Boximg3>
+            <Boximg2 />
+            <Boximg3 />
           </Flex>
         </Headerbox2>
       </HeaderPagina>
@@ -548,7 +582,7 @@ const Main = () => {
           </ItemStart>
           <ItemMid>
             <Flex>
-              <IconFast></IconFast>
+              <IconFast />
               <div>
                 <h3>Fast Transaction</h3>
                 <p style={{ fontSize: '18px', fontFamily: 'DM Sans' }}>
@@ -559,7 +593,7 @@ const Main = () => {
           </ItemMid>
           <ItemEnd>
             <Flex>
-              <IconSafe></IconSafe>
+              <IconSafe />
               <div>
                 <h3>Safe Transaction </h3>
                 <p style={{ fontSize: '18px', fontFamily: 'DM Sans' }}>
@@ -599,11 +633,11 @@ const Main = () => {
           <Flex style={{ justifyContent: 'space-between' }}>
             <BoxCategory>
               <Flex>
-                <ButtonCategory init={'red'}>All Categories</ButtonCategory>
-                <ButtonCategory init={'red'}>Art</ButtonCategory>
-                <ButtonCategory init={'red'}>Celebrities</ButtonCategory>
-                <ButtonCategory init={'red'}>Gaming</ButtonCategory>
-                <ButtonCategory init={'red'}>Sport</ButtonCategory>
+                <ButtonCategory init={'#531885'}>All Categories</ButtonCategory>
+                <ButtonCategory init={'#531885'}>Art</ButtonCategory>
+                <ButtonCategory init={'#531885'}>Celebrities</ButtonCategory>
+                <ButtonCategory init={'#531885'}>Gaming</ButtonCategory>
+                <ButtonCategory init={'#531885'}>Sport</ButtonCategory>
               </Flex>
             </BoxCategory>
             <MenuFilter>Filter</MenuFilter>
